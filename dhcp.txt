@@ -1,0 +1,68 @@
+Private IP addresses (inside your network)
+
+Your router assigns private IPs to each device 
+(usually via DHCP(Dynamic Host Configuration Protocol)).
+
+Example:
+
+Device A: 192.168.1.2
+
+Device B: 192.168.1.3
+
+Device C: 192.168.1.4
+
+Device D: 192.168.1.5
+
+Router (gateway): 192.168.1.1
+
+What DHCP does
+
+When a device (phone, laptop, PC, smart TV) joins your network, DHCP provides:
+
+IP address (e.g. 192.168.1.10)
+
+Subnet mask (e.g. 255.255.255.0)
+
+Default gateway (your router, e.g. 192.168.1.1)
+
+DNS servers (to resolve websites like google.com)
+
+Without DHCP, you would have to enter all of this manually on every device.
+
+How DHCP works (DORA process)
+
+DHCP works in four simple steps, called DORA:
+
+1. Discover
+
+The device broadcasts:
+
+“Is there any DHCP server here?”
+
+2. Offer
+
+The DHCP server (usually your router) replies:
+
+“I can give you IP 192.168.1.10.”
+
+3. Request
+
+The device responds:
+
+“Yes, I want that IP.”
+
+4. Acknowledge
+
+The server confirms:
+
+“IP assigned. You can use it.”
+
+✔️ Now the device can communicate on the network.
+
+Example in a home network
+
+Your router:
+
+Runs a DHCP server
+
+Automatically assigns IPs to all connected devices.
